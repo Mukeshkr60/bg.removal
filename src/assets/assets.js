@@ -13,6 +13,7 @@ import google_plus_icon from "./google_plus_icon.svg";
 import twitter_icon from "./twitter_icon.svg";
 import profile_img_1 from "./profile_img_1.jpg";
 import profile_img_2 from "./profile_img_2.jpg";
+import profile_img_3 from "./profile_img_3.jpg";
 import credit_icon from "./credit_icon.png";
 
 export const assets = {
@@ -42,10 +43,18 @@ export const testimonialsData = [
   },
   {
     id: 2,
-    text: "I've been using bg.removal for nearly 6 months, I had a fantastic experience. The quality is top-notch. I recommend others to try this app.",
+    text: "I've been using this bg.removel for 10 months, and it's been fantastic – top-notch quality! Highly recommend giving it a try.",
     author: "Donald Jackman",
     image: profile_img_2,
     jobTitle: "UI Deginer",
+  },
+  ,
+  {
+    id: 3,
+    text: "I've been using bg.removal for nearly 6 months, I had a fantastic experience. The quality is top-notch. I recommend others to try this app.",
+    author: "Sr. Richard",
+    image: profile_img_3,
+    jobTitle: "Full Stack Developer",
   },
 ];
 

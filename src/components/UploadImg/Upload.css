@@ -1,0 +1,117 @@
+.upload-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .upload-text {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0;
+    color: #333;
+  }
+  
+  .upload-but {
+    position: centre;
+    /* left: 5%;
+    top: 65%;
+    width: 35%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .rainbow-border {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: rgb(120, 12, 153); */
+    /* background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+      ); */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+    position: relative;
+    max-height: 15px;
+    width: auto;
+   
+  }
+  
+  .rainbow-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: -1;
+    border-radius: 20px;
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    background-size: 400%;
+    animation: rainbow 20s linear infinite;
+  }
+  
+  .rainbow-border:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(59, 130, 246, 0.2);
+  }
+  
+  .upload-icon {
+    width: 30px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .upload-small {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+     white-space: nowrap;
+    overflow: hidden; 
+ 
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
